@@ -1,0 +1,19 @@
+{
+  "name": "fruugo-crawler",
+  "version": "1.0.0",
+  "description": "Fruugo产品爬虫 - 基于agent-browser",
+  "main": "src/browser.js",
+  "scripts": {
+    "test": "node test-browser.js",
+    "test:fruugo": "node test-fruugo.js",
+    "install-browser": "agent-browser install --with-deps",
+    "crawl": "node src/crawler/list-crawler.js"
+  },
+  "keywords": ["crawler", "fruugo", "agent-browser", "scraping"],
+  "author": "Hunter",
+  "license": "ISC",
+  "dependencies": {
+    "agent-browser": "^0.20.2",
+    "puppeteer": "^24.39.1"
+  }
+}
